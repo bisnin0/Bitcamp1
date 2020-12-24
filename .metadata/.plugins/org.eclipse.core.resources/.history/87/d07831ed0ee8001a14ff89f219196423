@@ -1,0 +1,38 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+
+public class FileUnicasteSend extends JFrame implements ActionListener{
+	JButton btn = new JButton("파일전송하기");
+	public FileUnicasteSend() {
+		add(btn);
+		setSize(400,200);
+		setVisible(true);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		btn.addActionListener(this);
+	}
+	public void start() {
+		try {
+			JFileChooser fc = new JFileChooser();
+			int state = fc.showOpenDialog(this);
+			if(state==0) {
+				//열기 선택시 파일전송하기
+				File file = fc.getSelectedFile();
+				//파일명 얻어오기 
+				String fileName = file.getName();
+				System.out.println(fileName);
+				
+			}			
+		}catch(Exception e) {}
+	}
+	public void actionPerformed(ActionEvent ae) {
+		start();
+	}
+	public static void main(String[] args) {
+		new FileUnicasteSend();
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;CalendarSwing&apos; to &apos;CalculatorSwing&apos;&#x0D;&#x0A;- Original project: &apos;java08_swing&apos;&#x0D;&#x0A;- Original element: &apos;CalendarSwing&apos;&#x0D;&#x0A;- Renamed element: &apos;CalculatorSwing&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CalendarSwing&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{CalendarSwing.java[CalendarSwing" matchStrategy="1" name="CalculatorSwing" qualified="false" references="true" similarDeclarations="false" stamp="1597020965487" textual="false" version="1.0"/>
+</session>

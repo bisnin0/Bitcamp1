@@ -1,0 +1,25 @@
+package java05_exception;
+
+public class ExceptionTest2 {
+
+	public ExceptionTest2() {
+		try {
+			int a= 10;
+			int b= 20;
+			String c = "test";
+			int d = Integer.valueOf(c);//-------------
+			
+			int arr[] = {100,200, 300};
+			arr[3] = 500;//--------------
+			
+			
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+			
+	}
+
+	public static void main(String[] args) {
+		new ExceptionTest2();
+	}
+}

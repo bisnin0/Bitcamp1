@@ -1,0 +1,13 @@
+
+public class UpdateTest extends DBConn {
+
+	public UpdateTest() {
+		start();
+	}
+	public void start() {
+		
+	}
+	public static void main(String args[]) {
+		new UpdateTest();
+	}
+}

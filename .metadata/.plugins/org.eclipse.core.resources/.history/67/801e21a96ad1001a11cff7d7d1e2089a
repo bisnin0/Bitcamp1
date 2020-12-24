@@ -1,0 +1,14 @@
+package java05_exception;
+
+public class MyExceptionTest {
+
+	public MyExceptionTest() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

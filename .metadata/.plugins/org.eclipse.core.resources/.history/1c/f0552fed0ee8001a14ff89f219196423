@@ -1,0 +1,15 @@
+
+public class FileUnicasteReceive {
+
+	public FileUnicasteReceive() {
+		
+	}
+	public void start() {
+		try {
+			
+		}catch(Exception e) {}
+	}
+	public static void main(String[] args) {
+		new FileUnicasteReceive().start();
+	}
+}

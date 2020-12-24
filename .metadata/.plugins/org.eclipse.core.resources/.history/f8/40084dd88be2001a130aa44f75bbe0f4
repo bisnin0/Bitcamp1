@@ -1,0 +1,54 @@
+
+
+import java.util.Scanner;
+
+public class InsertTest {
+	Scanner scan = new Scanner(System.in);
+	try {
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+	}catch(ClassNotFoundException c) {
+		System.out.println("드라이브 에러발생---->"+ c.getMessage());
+	}
+	
+	
+	public InsertTest() {
+		// jdbc 드라이브 등록
+//		try {
+//			Class.forName("oracle.jdbc.driver.OracleDriver");
+//		}catch(ClassNotFoundException c) {
+//			System.out.println("드라이브 에러발생---->"+ c.getMessage());
+//		}
+	}
+	/*
+	 *  java에서 database  사용하기
+	 *  1. 자바가상머신에  jdbc드라이브 등록
+	 * 
+	 * 
+	 */
+	public void start() {
+		while(true) {
+			try {
+				//입력
+				System.out.print("번호=");
+				int num = Integer.parseInt(scan.nextLine());
+				System.out.print("이름=");
+				String username = scan.nextLine();
+				System.out.print("연락처=");
+				String tel = scan.nextLine();
+				System.out.print("이메일=");
+				String email = scan.nextLine();
+				System.out.print("주소=");
+				String addr = scan.nextLine();
+				
+				
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void main(String[] args) {
+		InsertTest it = new InsertTest();
+		it.start();
+	}
+
+}

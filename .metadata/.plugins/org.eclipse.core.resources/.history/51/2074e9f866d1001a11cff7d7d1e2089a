@@ -1,0 +1,31 @@
+package java05_exception;
+
+public class ExceptionTest4 {
+	int n1;
+	int n2;
+	public ExceptionTest4() {		
+	}
+	public ExceptionTest4(int n1, int n2) {
+		this.n1 = n1;
+		this.n2 = n2;
+		plus();
+	}
+	public void plus() {
+		System.out.println("n1+n2="+ (n1+n2));
+		minus();
+	}
+	public void minus() {
+		System.out.println("n1-n2="+ (n1-n2));
+		multiple();
+	}
+	public void multiple() {
+		System.out.println("n1*n2="+ n1*n2);
+		devide();
+	}
+	public void devide() throws ArithmeticException{
+		System.out.println("n1/n2="+ n1/n2); // ArithmeticException
+	}
+	public static void main(String[] a) {
+		new ExceptionTest4(100,0);
+	}
+}

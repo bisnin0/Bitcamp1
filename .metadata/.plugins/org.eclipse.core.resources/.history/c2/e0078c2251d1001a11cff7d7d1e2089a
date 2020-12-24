@@ -1,0 +1,27 @@
+package java05_exception;
+
+import java.util.Scanner;
+
+public class ExceptionTest {
+	Scanner scan = new Scanner(System.in);
+	public ExceptionTest() {
+		
+	}
+	public void start() {
+		//두수를 입력받아 합, 차, 곱, 몫을 구하는 프로그램을 작성한다.
+		System.out.print("첫번째 수=");
+		int n1 = scan.nextInt();//-------------------  "5"  "T"
+		System.out.print("두번째 수=");
+		int n2 = scan.nextInt();//---------------
+		
+		int hap = n1 + n2;
+		int cha = n1 - n2;
+		int gob = n1 * n2;
+		int mok = n1 / n2;
+		
+		System.out.println("합:"+hap+", 차="+cha+", 곲:"+gob+", 몫:"+mok);			
+	}
+	public static void main(String[] args) {
+		new ExceptionTest().start();
+	}
+}

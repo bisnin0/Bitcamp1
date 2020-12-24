@@ -1,0 +1,9 @@
+package java05_exception;
+
+public class MyException {
+
+	public MyException() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
